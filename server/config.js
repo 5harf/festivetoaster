@@ -1,5 +1,5 @@
 var Sequelize = require("sequelize");
-var dbConfig = require('./dbConfig.js')
+var dbConfig = require('./dbConfig.js');
 
 var sequelize = new Sequelize('nowDB', 'root', dbConfig.password, {
   host: 'localhost',
@@ -9,7 +9,7 @@ var sequelize = new Sequelize('nowDB', 'root', dbConfig.password, {
     max: 5,
     min: 0,
     idle: 10000
-  },
+  }
 
 });
 
