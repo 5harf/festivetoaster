@@ -1,6 +1,7 @@
 var Sequelize = require("sequelize");
+var dbConfig = require('./dbConfig.js')
 
-var sequelize = new Sequelize('nowDB', 'root', '', {
+var sequelize = new Sequelize('nowDB', 'root', dbConfig.password, {
   host: 'localhost',
   dialect: 'postgres',
 
