@@ -1,11 +1,13 @@
 // var User = require('./userModel.js'); //find correct path
 var db = require('./../config.js');
-
+var http = require('http-request');
+var FitbitClient = require('fitbit-client-oauth2');
 
 module.exports = {
   fitbit: {
     //comment all this back in when working on it
     get: function (req, res) {
+
     //       db.AccountFitBit.findOne(/*fill this in*/)
     //         .then(function(account) {
     //           res.json(account);
